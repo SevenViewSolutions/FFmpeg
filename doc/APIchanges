@@ -2,6 +2,36 @@ The last version increases of all libraries were on 2024-03-07
 
 API changes, most recent first:
 
+2024-10-26 - xxxxxxxxxx - lavu 59.46.100 - pixfmt.h
+  Add AV_PIX_FMT_XV48.
+
+2024-10-23 - xxxxxxxxxx - lsws 8.9.100 - swscale.h
+  Add sws_is_noop().
+
+2024-10-23 - xxxxxxxxxx - lsws 8.8.100 - swscale.h
+  Add frame property testing API:
+    - sws_test_format()
+    - sws_test_colorspace()
+    - sws_test_primaries()
+    - sws_test_transfer()
+    - sws_test_frame()
+
+2024-10-23 - xxxxxxxxxx - lsws 8.7.100 - swscale.h
+  Add sws_free_context().
+
+2024-10-23 - xxxxxxxxxx - lavu 59.45.100 - pixfmt.h
+  Add AV_PIX_FMT_Y216.
+
+2024-10-15 - xxxxxxxxxx - lavu 59.44.100 - pixfmt.h
+  Add AV_PIX_FMT_RGB96 and AV_PIX_FMT_RGBA128.
+
+2024-10-14 - c993a91bea - lavu 59.43.100 - pixfmt.h
+  Add AV_PIX_FMT_RGBF16.
+
+2024-10-08 - xxxxxxxxxx - lavu 59.42.100 - pixfmt.h
+  Add AV_PIX_FMT_AYUV, AV_PIX_FMT_UYVA, AV_PIX_FMT_VYU444,
+  and AV_PIX_FMT_V30X.
+
 2024-10-xx - xxxxxxxxxx - lavu 59.41.100 - log.h
   Add AVClass.state_flags_offset and AV_CLASS_STATE_INITIALIZED.
 

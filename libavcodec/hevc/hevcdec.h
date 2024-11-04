@@ -531,7 +531,7 @@ typedef struct HEVCContext {
     HEVCDSPContext hevcdsp;
     VideoDSPContext vdsp;
     BswapDSPContext bdsp;
-    H274FilmGrainDatabase h274db;
+    H274FilmGrainDatabase* h274db;  // Dynamically allocated due to large size.
 
     /** used on BE to byteswap the lines for checksumming */
     uint8_t *checksum_buf;
@@ -539,6 +539,9 @@ typedef struct HEVCContext {
 
     /** The target for the common_cabac_state of the local contexts. */
     HEVCCABACState cabac;
+
+    struct ThreadProgress *wpp_progress;
+    unsigned            nb_wpp_progress;
 
     atomic_int wpp_err;
 
