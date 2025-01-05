@@ -327,6 +327,7 @@ enum AVCodecID {
     AV_CODEC_ID_VMIX,
     AV_CODEC_ID_LEAD,
     AV_CODEC_ID_DNXUC,
+    AV_CODEC_ID_RV60,
 
     /* various PCM "codecs" */
     AV_CODEC_ID_FIRST_AUDIO = 0x10000,     ///< A dummy id pointing at the start of audio codecs
@@ -421,6 +422,7 @@ enum AVCodecID {
     AV_CODEC_ID_ADPCM_IMA_MOFLEX,
     AV_CODEC_ID_ADPCM_IMA_ACORN,
     AV_CODEC_ID_ADPCM_XMD,
+    AV_CODEC_ID_ADPCM_IMA_XBOX,
 
     /* AMR */
     AV_CODEC_ID_AMR_NB = 0x12000,
